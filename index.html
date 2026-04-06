@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAVD Clothing Promo Code - 15% Off | FAITH15</title>
-    <meta name="description" content="Get 15% off your order at SAVD Clothing with promo code FAITH15. Valid on all apparel at savdclothing.com.">
+    <meta name="description" content="Get 15% off your order at SAVD Clothing with promo code FAITH15. Valid on all apparel at savedclothing.com.">
     
-    <!-- Structured Data for Search Engines -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
@@ -25,28 +24,52 @@
     </script>
 
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f4f4f4; }
-        .coupon-card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; max-width: 400px; }
-        h1 { color: #333; font-size: 1.5rem; }
-        .code { display: inline-block; background: #000; color: #fff; padding: 10px 20px; font-size: 2rem; font-weight: bold; margin: 20px 0; letter-spacing: 2px; border: 2px dashed #fff; }
-        .discount { font-size: 1.2rem; color: #e63946; font-weight: bold; }
-        .cta-btn { display: block; background: #333; color: white; text-decoration: none; padding: 12px; border-radius: 5px; margin-top: 20px; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background-color: #fafafa; color: #333; }
+        .coupon-card { background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; max-width: 400px; width: 90%; }
+        
+        /* Logo Styling */
+        .logo { max-width: 150px; height: auto; margin-bottom: 20px; }
+        
+        h1 { font-size: 1.4rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        p { color: #666; line-height: 1.5; }
+        
+        .code-container { position: relative; background: #000; color: #fff; padding: 20px; font-size: 2.2rem; font-weight: bold; margin: 25px 0; letter-spacing: 3px; border: 2px dashed #444; cursor: pointer; transition: transform 0.2s; }
+        .code-container:hover { transform: scale(1.02); }
+        
+        .discount-badge { font-size: 1.1rem; color: #d0021b; font-weight: bold; margin-bottom: 20px; display: block; }
+        
+        .cta-btn { display: block; background: #000; color: white; text-decoration: none; padding: 15px; border-radius: 8px; font-weight: bold; margin-top: 25px; transition: background 0.3s; }
+        .cta-btn:hover { background: #333; }
+        
+        .copy-hint { font-size: 0.8rem; color: #999; margin-top: -15px; margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
     <div class="coupon-card">
-        <h1>SAVD Clothing Discount</h1>
+        <img src="https://savdclothing.com/cdn/shop/files/Black_Logo_-_No_Slogan.png?v=1715076209&width=1111" alt="SAVD Clothing 15 percent off promo code FAITH15" class="logo">
+        
+        <h1>SAVD Discount Code</h1>
         <p>Use the promo code below at checkout to save on your next purchase.</p>
         
-        <div class="code">FAITH15</div>
+        <div class="code-container" onclick="copyCode()">
+            FAITH15
+        </div>
+        <p class="copy-hint">Click the code to copy!</p>
         
-        <p class="discount">15% OFF YOUR ENTIRE ORDER</p>
+        <span class="discount-badge">15% OFF YOUR ENTIRE NEXT ORDER</span>
         
-        <p>Apply at <a href="https://www.savdclothing.com/FAITH15">savdclothing.com</a></p>
+        <p>Redeemable at:<br><strong>savdclothing.com</strong></p>
         
-        <a href="https://www.savdclothing.com/FAITH15" class="cta-btn">Shop SAVD Now</a>
+        <a href="https://www.savdclothing.com/FAITH15" target="_blank" class="cta-btn">SHOP SAVD Now</a>
     </div>
+
+    <script>
+        function copyCode() {
+            navigator.clipboard.writeText("FAITH15");
+            alert("Code FAITH15 copied to clipboard!");
+        }
+    </script>
 
 </body>
 </html>
